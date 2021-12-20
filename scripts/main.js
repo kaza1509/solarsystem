@@ -7,10 +7,10 @@ let caculate = () => {
     let onOff = true
     document.body.addEventListener('keypress', e => {
         onOff=!onOff
-        if(e.keyCode == 32 && onOff) {
+        if(e.keyCode == 32 && onOff == false) {
             audio.pause()
         }
-        else if(e.keyCode == 32 && !onOff) {
+        else if(e.keyCode == 32 && onOff == true) {
             audio.play()
         }
     })
