@@ -4,14 +4,10 @@
 
 let caculate = () => {
     let audio = document.getElementById('audio')
-    let onOff = true
+    
     document.body.addEventListener('keypress', e => {
-        onOff=!onOff
-        if(e.keyCode == 32 && onOff) {
+        if(e.keyCode == 32) {
             audio.pause()
-        }
-        else if(e.keyCode == 32 && !onOff) {
-            audio.play()
         }
     })
     //-----------------------------------

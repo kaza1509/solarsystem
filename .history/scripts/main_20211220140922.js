@@ -3,17 +3,7 @@
 
 
 let caculate = () => {
-    let audio = document.getElementById('audio')
-    let onOff = true
-    document.body.addEventListener('keypress', e => {
-        onOff=!onOff
-        if(e.keyCode == 32 && onOff) {
-            audio.pause()
-        }
-        else if(e.keyCode == 32 && !onOff) {
-            audio.play()
-        }
-    })
+
     //-----------------------------------
     let button = document.querySelector('button')
     let mass = document.querySelector('#input input')

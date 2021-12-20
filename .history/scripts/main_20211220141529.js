@@ -10,9 +10,6 @@ let caculate = () => {
         if(e.keyCode == 32 && onOff) {
             audio.pause()
         }
-        else if(e.keyCode == 32 && !onOff) {
-            audio.play()
-        }
     })
     //-----------------------------------
     let button = document.querySelector('button')

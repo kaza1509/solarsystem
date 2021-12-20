@@ -10,8 +10,8 @@ let caculate = () => {
         if(e.keyCode == 32 && onOff) {
             audio.pause()
         }
-        else if(e.keyCode == 32 && !onOff) {
-            audio.play()
+        else if(e.keyCode == 32 && onOff) {
+            audio.p
         }
     })
     //-----------------------------------
